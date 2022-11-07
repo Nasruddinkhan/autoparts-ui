@@ -1,0 +1,49 @@
+.headers {
+  display: flex;
+  background-color: #317a82;
+  height: 5rem;
+}
+.left-item {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+}
+.right-item {
+  display: flex;
+  flex: 3;
+  align-items: center;
+  justify-content: right;
+
+}
+.brands {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 60px;
+  object-fit: cover;
+}
+
+.login {
+  float: right;
+  position: relative;
+  z-index: 99999;
+  .btn_login {
+    text-align: center;
+    border: 1px solid #fff;
+    background: transparent;
+    border-radius: 20px;
+    font-size: 12px;
+    padding: 10px;
+    width: 90px;
+    font-size: 12px;
+    display: inline-block;
+    color: #000;
+    background: #fff;
+    font-weight: bold;
+    margin-right: 10px;
+    text-decoration: none;
+    white-space: nowrap;
+  }
+}
