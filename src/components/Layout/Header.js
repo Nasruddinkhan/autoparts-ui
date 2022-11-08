@@ -2,6 +2,7 @@ import { Fragment } from "react";
 import "./Header.scss";
 import logos from "../../assets/img/logos.jpeg";
 import HeaderCartButton from "./HeaderCartButton";
+import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <Fragment>
@@ -11,27 +12,26 @@ const Header = () => {
         </div>
         <div className="right-item">
           <div className="login">
-            <a className="btn_login" href="/sdsd">
+            <NavLink className="btn_login" to="/about-us">
               About
-            </a>
-            <a className="btn_login" href="/sdsd">
+            </NavLink>
+            <NavLink className="btn_login" to="/faq">
               FAQ
-            </a>
-            <a className="btn_login" href="/sdsd">
+            </NavLink>
+            <NavLink className="btn_login" to="/all-part">
               All parts
-            </a>
-            <a className="btn_login" href="/sdsd">
+            </NavLink>
+            <NavLink className="btn_login" to="/engines">
               Used engines
-            </a>
-            <a className="btn_login" href="/sdsd">
+            </NavLink>
+            <NavLink className="btn_login" to="/gearbox">
               Used Gearboxes
-            </a>
-            <a className="btn_login" href="/sdsd">
+            </NavLink>
+            <NavLink className="btn_login" to="/guide">
               Guide
-            </a>
-            
+            </NavLink>
           </div>
-          <HeaderCartButton/>
+          <HeaderCartButton />
         </div>
       </div>
     </Fragment>
