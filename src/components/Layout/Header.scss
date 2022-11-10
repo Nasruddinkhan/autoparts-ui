@@ -2,6 +2,7 @@
   display: flex;
   background-color: #317a82;
   height: 5rem;
+  box-shadow:  rgb(49 122 130 / 35%) 0px 5px 15px;
 }
 .left-item {
   display: flex;
@@ -64,7 +65,7 @@
   }
 }
 
- 
+a.btn_login:hover,
 a.btn_login.active {
   border-bottom: 5px solid #92320c;
   border-bottom-left-radius: unset;
