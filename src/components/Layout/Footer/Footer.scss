@@ -1,0 +1,70 @@
+.footers {
+  color: #fff;
+  background: #f73737;
+  min-height: 400px;
+  background-color: #317a82;
+  box-shadow: rgb(49 122 130 / 35%) 0px 5px 15px;
+}
+
+.topDiv {
+
+  min-height: 200px;
+  display: flex;
+  flex: 1 1;
+  background-color: #35b3c0;
+  justify-content: space-around;
+  align-items: center;
+}
+.firstCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bottomDiv {
+    min-height: 200px;
+    display: flex;
+    flex: 1 1;
+    justify-content: space-around;
+}
+ .carts-paragraphs{
+    font-family: ui-monospace;
+ }
+ .spanPayment {
+    font-size: x-large; 
+    font-weight: bolder;
+    font-family: ui-monospace
+ }
+ .icons{
+    font-size: 80px;
+    margin-left: 0.5rem;
+ }
+
+ .paymentIcons {
+    font-size: 80px;
+ }
+ .thiCart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .SecCart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+
+.cart {
+    width: 25%;    
+    padding: 1rem;
+
+}
+
+.footerparagraphs {
+    box-sizing: inherit;
+   
+    font-family: serif;
+
+
+}

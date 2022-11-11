@@ -1,4 +1,4 @@
-import CartIcon from "../../assets/logo/CartIcon";
+import CartIcon from "../../../../assets/logo/CartIcon";
 import "./HeaderCartButton.scss";
 
 const HeaderCartButton = () => {

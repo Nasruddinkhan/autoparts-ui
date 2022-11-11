@@ -1,8 +1,8 @@
 import { Fragment } from "react";
 import "./Header.scss";
-import logos from "../../assets/img/logos.jpeg";
-import HeaderCartButton from "./HeaderCartButton";
+import logos from "../../../assets/img/logos.jpeg";
 import { NavLink } from "react-router-dom";
+import HeaderCartButton from "./Cart/HeaderCartButton";
 const Header = () => {
   return (
     <Fragment>
@@ -31,7 +31,7 @@ const Header = () => {
               Guide
             </NavLink>
           </div>
-          <HeaderCartButton />
+          <HeaderCartButton/>
         </div>
       </div>
     </Fragment>
