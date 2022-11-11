@@ -1,5 +1,7 @@
+import Parts from "../components/Parts/Parts";
+
 const AllPart = () => {
-    return <h2>AllPart</h2>;
+    return <Parts/>;
 };
 
 export default AllPart;

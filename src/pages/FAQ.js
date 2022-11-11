@@ -1,5 +1,7 @@
+import Faq from "../components/Faq/Faq";
+
 const FAQ = () => {
-  return <h2>FAQ</h2>;
+  return <Faq/>;
 };
 
 export default FAQ;

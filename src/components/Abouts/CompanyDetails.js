@@ -30,8 +30,8 @@ const CompanyDetails = () => {
               <br/>
               or send us an e-mail to service@autoparts-24.com
             </p>
-            <p class="paragraphs">Monday - Thursday: 
-            <span class="noWrap">8.30 — 15.30</span><br/>Friday: <span class="noWrap">9.00 — 15.30</span></p>
+            <p className="paragraphs">Monday - Thursday: 
+            <span className="noWrap">8.30 — 15.30</span><br/>Friday: <span className="noWrap">9.00 — 15.30</span></p>
           </div>
         </div>
       </div>
