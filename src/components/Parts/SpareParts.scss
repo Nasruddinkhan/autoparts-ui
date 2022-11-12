@@ -3,7 +3,20 @@
     border-radius: 10px;
 }
 .parts-heading {
-    padding: 1rem;
+    padding: 1rem 0 0 1rem;
     color: #516566;
     margin: 0;
 }
+.item-card {
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    text-align: left;
+    padding: 1px;
+    color: 516566;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .card-heading {
+    padding-left: 10px;
+    color: #516566;
+  }
