@@ -34,6 +34,11 @@ const SpareParts = () => {
               <h6 className="card-heading">USED SPARE PARTSA B S - Eletronic Box (1992)</h6>
             </div>
           </Grid>
+          <Grid item xs={3}>
+            <div className="item-card ">
+              <h6 className="card-heading">USED SPARE PARTSA B S - Eletronic Box (1992)</h6>
+            </div>
+          </Grid>
         </Grid>
       </Box>
     </div>
