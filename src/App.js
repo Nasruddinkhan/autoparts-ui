@@ -9,6 +9,7 @@ import FAQ from "./pages/FAQ";
 import Gearbox from "./pages/Gearbox";
 import Guide from "./pages/Guide";
 import NotFound from "./pages/NotFound";
+import PartItems from "./pages/PartItems";
 
 // import Header from "./components/Layout/Header";
 
@@ -19,9 +20,13 @@ function App() {
       <Routes>
         <Route exact path="/" element={<Navigate to="/about-us" />} />
         <Route exact path="/about-us" element={<AboutUs />} />
-        <Route exact path="/all-part" element={<AllPart />} />
+        <Route path="/all-part">
+          <Route index element={<AllPart />} />
+          <Route path="item" element={<PartItems />} />
+        </Route>
         <Route exact path="/faq" element={<FAQ />} />
         <Route exact path="/engines" element={<Engines />} />
+
         <Route exact path="/gearbox" element={<Gearbox />} />
         <Route exact path="/guide" element={<Guide />} />
         <Route path="*" element={<NotFound />} />
