@@ -1,0 +1,29 @@
+.searchcontainer {
+    height: 80vh;
+    width: 100%;
+    box-shadow: rgb(49 122 130 / 35%) 0px 5px 15px;
+    border: 1px solid rgba(49, 122, 130, 0.35);
+    border-radius: 5px;
+}
+
+.searchRow {
+
+    border-bottom: 1px solid rgb(49 122 130 / 35%);
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+
+}
+
+.searchHeading{
+    color: #516566;
+}
+.searchRowForm{
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 100%;
+}
