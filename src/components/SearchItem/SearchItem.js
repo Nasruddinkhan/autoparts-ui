@@ -18,9 +18,12 @@ const SearchItem = () => {
     </div>
     <div className="searchRowForm" >
         <MinimumDistanceSlider label="km"/>
-        <TextField id="outlined-basic" label="Outlined" className="firstField" variant="outlined" />
-        <TextField id="outlined-basic" label="Outlined" className="secondField" variant="outlined" />
-
+    </div>
+    <div className="searchRowForm" >
+        <MinimumDistanceSlider label="Price"/>
+    </div>
+    <div className="searchRowForm" >
+        <MinimumDistanceSlider label="Year"/>
     </div>
   </div>;
 };

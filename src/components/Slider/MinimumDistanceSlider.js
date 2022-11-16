@@ -27,7 +27,7 @@ const  MinimumDistanceSlider =(props)=> {
 
 
   return (
-    <Box sx={{ width: "100%", padding:"1rem" }}>
+    <Box sx={{ width: "100%", padding:"0 1rem" }}>
     <Typography id="input-slider" gutterBottom>
         {props.label}
       </Typography>
