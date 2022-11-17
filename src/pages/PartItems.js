@@ -1,3 +1,4 @@
+import { Box, Grid } from "@mui/material";
 import React, { Fragment } from "react";
 import Item from "../components/Items/Item";
 import SearchItem from "../components/SearchItem/SearchItem";
@@ -10,7 +11,31 @@ const PartItems = () => {
           <SearchItem />
         </div>
         <div className="cardItem">
-          <Item />
+          <Box sx={{ width: "100%" }}>
+            <Grid container>
+              <Grid>
+                <Item />
+              </Grid>
+              <Grid>
+                <Item />
+              </Grid>
+              <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid> <Grid>
+                <Item />
+              </Grid>
+            </Grid>
+          </Box>
         </div>
       </div>
     </Fragment>
