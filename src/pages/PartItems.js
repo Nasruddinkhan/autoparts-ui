@@ -1,7 +1,8 @@
-import { Box, Grid } from "@mui/material";
+import { Button } from "@mui/material";
 import React, { Fragment } from "react";
 import Item from "../components/Items/Item";
 import SearchItem from "../components/SearchItem/SearchItem";
+import AutorenewIcon from '@mui/icons-material/Autorenew';
 import "./PartItems.scss";
 const PartItems = () => {
   return (
@@ -11,32 +12,22 @@ const PartItems = () => {
           <SearchItem />
         </div>
         <div className="cardItem">
-          <Box sx={{ width: "100%" }}>
-            <Grid container>
-              <Grid>
-                <Item />
-              </Grid>
-              <Grid>
-                <Item />
-              </Grid>
-              <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid> <Grid>
-                <Item />
-              </Grid>
-            </Grid>
-          </Box>
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <Item />
+          <div className="cartbutton">
+          <Button variant="contained" endIcon={<AutorenewIcon />}>
+               Load More
+              </Button>
+          </div>
         </div>
+        
       </div>
     </Fragment>
   );
