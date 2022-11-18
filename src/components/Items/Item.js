@@ -2,10 +2,15 @@ import { Box, Button } from "@mui/material";
 import React from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "./Item.scss";
+import { useNavigate } from "react-router";
+import { Link } from "react-router-dom";
+
 const Item = () => {
+  let navigate = useNavigate();
 
   const viewProducts = ()=> {
-    console.log(222);
+    navigate("/all-part/view-product");
+
   }
   return (
     <Box sx={{ width: "100%" }}>
@@ -46,7 +51,7 @@ const Item = () => {
               <span className="itmkey">VIN-Number:</span>
               <span className="itmVal">WAUZZZ8DZTA211463</span>
             </div>
-            <span className="moredetails" onClick={viewProducts}>More info</span>
+            <Link className="moredetails" to="/all-part/view-product">More info</Link>
           </div>
           <div className="colum">
             <div className="detailItm">
