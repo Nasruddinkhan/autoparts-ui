@@ -3,6 +3,10 @@ import React from "react";
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import "./Item.scss";
 const Item = () => {
+
+  const viewProducts = ()=> {
+    console.log(222);
+  }
   return (
     <Box sx={{ width: "100%" }}>
       <div className="item-container">
@@ -42,7 +46,7 @@ const Item = () => {
               <span className="itmkey">VIN-Number:</span>
               <span className="itmVal">WAUZZZ8DZTA211463</span>
             </div>
-            <span className="moredetails">More info</span>
+            <span className="moredetails" onClick={viewProducts}>More info</span>
           </div>
           <div className="colum">
             <div className="detailItm">
