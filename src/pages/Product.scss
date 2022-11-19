@@ -1,0 +1,17 @@
+.productContainer{
+    display: flex;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+    margin: 1rem;
+}
+
+.productDetails {
+    display: flex;
+    flex: 1
+}
+
+.productImages { 
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+}

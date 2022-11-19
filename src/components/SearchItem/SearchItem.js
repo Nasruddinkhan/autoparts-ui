@@ -4,7 +4,6 @@ import "./SearchItem.scss";
 import { top100Films } from "./../../data";
 import MinimumDistanceSlider from "../Slider/MinimumDistanceSlider";
 import { Button, TextField } from "@mui/material";
-import AutorenewIcon from '@mui/icons-material/Autorenew';
 
 const SearchItem = () => {
   return (

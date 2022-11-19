@@ -3,7 +3,6 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import Layout from "./components/Layout/Layout";
 import AboutUs from "./pages/AboutUs";
-import AddToCart from "./pages/AddToCart";
 import AllPart from "./pages/AllPart";
 import Engines from "./pages/Engines";
 import FAQ from "./pages/FAQ";
@@ -18,7 +17,6 @@ import Product from "./pages/Product";
 function App() {
   return (
     <Layout>
-      {/* <Header/> */}
       <Routes>
         <Route exact path="/" element={<Navigate to="/about-us" />} />
         <Route exact path="/about-us" element={<AboutUs />} />

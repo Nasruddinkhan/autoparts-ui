@@ -1,9 +1,24 @@
-import React from 'react'
-
-const Product =()=> {
+import React from "react";
+import BrandStory from "../components/BrandStory/BrandStory";
+import Swippers from "../components/Swippers/Swippers";
+import "./Product.scss";
+const Product = () => {
   return (
-    <div>View Product</div>
-  )
-}
+    <>
+        <div className="productContainer">
+      <div className="productImages">
+        <Swippers/>
+      </div>
+      <div className="productDetails">
+        details
+      </div>
 
-export default Product
+    </div>
+          <BrandStory/>
+
+    </>
+
+  );
+};
+
+export default Product;
