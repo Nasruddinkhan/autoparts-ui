@@ -32,14 +32,15 @@
 .detailItm{
     margin-bottom: 10px;
     font-size: 14px;
-
     .itmkey{
-        font-weight: bold;
         color: gray;
         margin-right: 5px;
+        font-weight: 900;
+
     }
     .itmVal{
-         font-weight: 300;
+         font-weight: 700;
+
     }
 }
 .moredetails{
@@ -56,6 +57,14 @@
     margin-top: 0;
 }
 
-.btn{
-    margin-top: 15%;
+.shipping-paragraph{
+    color: #FD7160;
+    font-weight: 900 !important;
+    font-size: 1rem;
+    cursor: pointer;
+}
+.columStyle {
+    border:2px solid #FD7160;
+    margin: 0.70rem;
+    border-radius: 5px;
 }

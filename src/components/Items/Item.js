@@ -1,17 +1,16 @@
-import { Box, Button } from "@mui/material";
-import React from "react";
-import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
+import { Box, Button, Stack, Typography } from "@mui/material";
+import React, { useState } from "react";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import "./Item.scss";
-import { useNavigate } from "react-router";
 import { Link } from "react-router-dom";
-
+import LocalShippingIcon from "@mui/icons-material/LocalShipping";
 const Item = () => {
-  let navigate = useNavigate();
+  const [showShipping, setShowShipping] = useState(false);
 
-  const viewProducts = ()=> {
-    navigate("/all-part/view-product");
-
-  }
+  const showShippingOptions = () => {
+    console.log("showShippingOptions");
+    setShowShipping(!showShipping);
+  };
   return (
     <Box sx={{ width: "100%" }}>
       <div className="item-container">
@@ -51,8 +50,11 @@ const Item = () => {
               <span className="itmkey">VIN-Number:</span>
               <span className="itmVal">WAUZZZ8DZTA211463</span>
             </div>
-            <Link className="moredetails" to="/all-part/view-product">More info</Link>
+            <Link className="moredetails" to="/all-part/view-product">
+              More info
+            </Link>
           </div>
+
           <div className="colum">
             <div className="detailItm">
               <span className="itmkey">
@@ -67,11 +69,55 @@ const Item = () => {
               <span className="itmkey">Delivery:</span>
               <span className="itmVal">4-5 workdays</span>
             </div>
-              <Button variant="contained"  style={{marginTop:"15%"}} endIcon={<ShoppingCartIcon />}>
-                Add to Cart
-              </Button>
+            <Button
+              variant="contained"
+              style={{ marginTop: "15%" }}
+              endIcon={<ShoppingCartIcon />}
+            >
+              Add to Cart
+            </Button>
+            <div className="shiping-out" onClick={showShippingOptions}>
+              <Stack direction="row" alignItems="center" gap={1}>
+                <LocalShippingIcon fontSize="large" />
+                <Typography variant="body1" className="shipping-paragraph">
+                  Show all delivery options
+                </Typography>
+              </Stack>
+            </div>
           </div>
         </div>
+        {showShipping && (
+          <div className="item-row">
+            <div className="colum columStyle">
+              <Stack direction="row" alignItems="center" gap={1}>
+                <LocalShippingIcon fontSize="large" />
+                <Typography variant="body1" className="shipping-paragraph">
+                  <div className="detailItm" style={{ marginBottom: "0" }}>
+                    <span className="itmkey"> Express delivery:</span>
+                    <span className="itmVal"> + 37,34 EUR</span>
+                  </div>
+                  <div className="detailItm">
+                    <span className="itmkey"> Estimated shippingtime:</span>
+                    <span className="itmVal"> 1-3 workdays</span>
+                  </div>
+                </Typography>
+              </Stack>
+              <Stack direction="row" alignItems="center" gap={1}>
+                <LocalShippingIcon fontSize="large" />
+                <Typography variant="body1" className="shipping-paragraph">
+                  <div className="detailItm" style={{ marginBottom: "0" }}>
+                    <span className="itmkey">Standard delivery:</span>
+                    <span className="itmVal"> Free</span>
+                  </div>
+                  <div className="detailItm">
+                    <span className="itmkey"> Estimated shippingtime:</span>
+                    <span className="itmVal"> 4-5 workdays</span>
+                  </div>
+                </Typography>
+              </Stack>
+            </div>
+          </div>
+        )}
       </div>
     </Box>
   );
