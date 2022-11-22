@@ -3,7 +3,7 @@ import "./ProductDetails.scss";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import { Button, Stack, Typography } from "@mui/material";
 import LocalShippingIcon from "@mui/icons-material/LocalShipping";
-
+import StarIcon from '@mui/icons-material/Star';
 const ProductDetails = () => {
   const [showShipping, setShowShipping] = useState(false);
 
@@ -122,6 +122,29 @@ const ProductDetails = () => {
             </div>
           </div>
         )}
+        <div className="product-item-row">
+          <div className="product-colum">
+            <Stack direction="row" alignItems="center" gap={1}>
+              <StarIcon fontSize="small" style={{color:'#029D69'}}/>
+              <Typography variant="body1" style={{fontSize:"13px"}}>
+                Free delivery
+              </Typography>
+            </Stack>
+            <Stack direction="row" alignItems="center" gap={1} >
+              <StarIcon fontSize="small" style={{color:'#029D69'}} />
+              <Typography variant="body1" style={{fontSize:"13px"}}>
+              Full return for 30 days.
+
+              </Typography>
+            </Stack>
+            <Stack direction="row" alignItems="center" gap={1}>
+              <StarIcon fontSize="small" style={{color:'#029D69'}}/>
+              <Typography variant="body1" style={{fontSize:"13px"}}>
+              Customer service: +45 38 74 04 48
+              </Typography>
+            </Stack>
+          </div>
+        </div>
       </div>
     </div>
   );
