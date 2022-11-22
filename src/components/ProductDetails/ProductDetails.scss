@@ -12,3 +12,49 @@
     margin-bottom: 0;
     color: #516566;
 }
+
+.product-item-column{
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+.product-colum {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+.product-detailItm{
+    margin-bottom: 10px;
+    font-size: 14px;
+    .product-itmkey{
+        color: gray;
+        margin-right: 5px;
+        font-weight: 900;
+
+    }
+    .product-itmVal{
+         font-weight: 700;
+
+    }
+}
+
+.buyMain {
+    padding: 1.5rem;
+    border: 1px solid #029D69;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #029D69;
+    color: white !important;
+    box-shadow: #029D69 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.product-shiping-out {
+    display: flex;
+    justify-content: flex-end;
+}
