@@ -1,0 +1,46 @@
+.additionalDetailsContainer{
+    display: flex;
+    width: 100%;
+    padding: 1rem;
+}
+
+.additionalDetails-row {
+    display: flex;
+    padding: 0 1rem;
+}
+
+.additionalDetailsheading {
+    margin-bottom: 0;
+    color: #516566;
+}
+
+.additionalDetailsColumn {
+    display: flex;
+    flex: 1;
+    justify-content: left;
+    padding: 0.5rem;
+    flex-direction: column;
+}
+
+.additionalDetails-detailItm{
+    font-size: 14px;
+    .additionalDetails-itmkey{
+        color: gray;
+        margin-right: 5px;
+        font-size: 13px;
+
+
+    }
+    .additionalDetails-itmVal{
+        font-size: 11px;
+    }
+}
+
+.spanlink{
+    cursor: pointer;
+    color: white;
+    padding: 1rem;
+    border: 1px solid #029D69;
+    border-radius: 5px;
+    background: #029D69;
+}
