@@ -1,0 +1,32 @@
+
+server:
+  port: 8991
+
+spring:
+  application:
+    name: autoparts-ui
+
+
+url-header: http
+cors:
+  allowed:
+    origins: '*'
+    methods: '*'
+  exposed:
+    headers: Access-Control-Allow-Origin, Content-Disposition, Access-Control-Expose-Headers,Access-Control-Allow-Headers,Access-Control-Allow-Credentials
+
+log.level: info
+log.file:  autoparts-ui.log
+app.name:  autoparts-ui
+app.version: @project.version@
+log.pattern: EVENTTIME=%d{"yyyy-MM-dd HH:mm:ss.SSSXXX", UTC},LEVEL=%level,APP_NAME=${APP_NAME},APP_VERSION=${APP_VERSION},Line=%line,DETAIL=Package:%logger{36}:%msg%n
+log.path: logs
+
+e-autoparts:
+  portal:
+    host: localhost:8084
+
+
+
+ui-endpoints:
+  get-all-courses: ${url-header}://${e-autoparts.portal.host}/proxy/api/services/v1/all-courses
